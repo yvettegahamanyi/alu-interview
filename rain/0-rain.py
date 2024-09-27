@@ -6,20 +6,25 @@ many square units of water will be retained after it rains.
 
 Function:
     - rain(walls): returns the total amount of rainwater retained given a list
-    of walls
+    of walls.
 """
+
 
 def rain(walls):
     """
     Parameters:
         - walls (List[int]): a list of non-negative integers
-        to represent the height of the wall
+          to represent the height of the walls.
+    
+    Returns:
+        - int: The total amount of water retained.
+    
     Example:
         walls = [0, 1, 0, 2, 0, 3, 0, 4]
-        print(rain(walls)) = 6
+        print(rain(walls))  # Output: 6
 
         walls = [2, 0, 0, 4, 0, 0, 1, 0]
-        print(rain(walls))= 6
+        print(rain(walls))  # Output: 6
     """
     if not walls:
         return 0
@@ -48,11 +53,3 @@ def rain(walls):
             total_water += water_at_wall
     
     return total_water
-
-
-# Example usage
-if __name__ == "__main__":
-    walls = [0, 1, 0, 2, 0, 3, 0, 4]
-    print(rain(walls))  # Output: 6
-    walls = [2, 0, 0, 4, 0, 0, 1, 0]
-    print(rain(walls))  # Output: 6
