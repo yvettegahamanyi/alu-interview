@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" 
-Given a list of non-negative integers representing the heights of walls with 
-unit width 1, as if viewing the cross-section of a relief map, calculate how 
+"""
+Given a list of non-negative integers representing the heights of walls with
+unit width 1, as if viewing the cross-section of a relief map, calculate how
 many square units of water will be retained after it rains.
 
-Function: 
+Function:
     - rain(walls): returns the total amount of rainwater retained given a list
     of walls
 
@@ -13,9 +13,9 @@ Function:
 def rain(walls):
     """
     Parameters:
-        - walls (List[int]): a list of non-negative integers 
+        - walls (List[int]): a list of non-negative integers
         to represent the height of the wall
-    Example: 
+    Example:
         walls = [0, 1, 0, 2, 0, 3, 0, 4]
         print(rain(walls)) = 6
 
