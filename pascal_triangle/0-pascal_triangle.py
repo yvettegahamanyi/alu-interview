@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 
-import math
+def factorial(n):
+    """Calculate factorial of n (n!)"""
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
 
 def combination(n, r):
-    """function to calculate binomial coefficient"""
-    return int((math.factorial(n)) / ((math.factorial(r)) * math.factorial(n - r)))
+    """Calculate binomial coefficient C(n, r) = n! / (r! * (n - r)!)"""
+    return factorial(n) // (factorial(r) * factorial(n - r))
 
 
 def pascal_triangle(n):
